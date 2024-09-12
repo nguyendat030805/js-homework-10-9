@@ -5,6 +5,7 @@ function myAdd(){
     var quanti =parseInt(frm.qti.value);
     var price = parseFloat(frm.pri.value);
     
+    
     if (isNaN(quanti)||isNaN(price)||frm.qti.value.trim()===""||frm.pri.value.trim()===""){
         alert("Bạn đã nhập sai, vui lòng nhập lại");
         return;
