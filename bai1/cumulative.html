@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+<style>
+    .main{
+        margin-top: 20px;
+    }
+    
+    .main_prd{  
+        width: 700px;
+        height: 500px;
+        border: 1px solid black;
+        padding: 20px;
+    }
+    .f1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sub1{
+        display: flex;
+        align-items: center;
+    }
+    p{
+        width: 100px;
+    }
+    .sub1 input{
+        width: 200px;
+        height: 30px;
+    }
+    table{
+        width: 600px;
+        border-spacing: 0;
+        border: 1px solid black;
+        text-align: center;
+        
+    }
+    .f2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .table{
+        padding-top: 30px;
+    }
+    .button{
+        padding-top: 40px;
+        height: 50px;
+    }
+    .button input{
+        width: 100px;
+        height: 50px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    .button input:hover{
+        background-color: blanchedalmond;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="main_prd">
+            <h1>New Product</h1>
+            <form name="frm">
+                <div class="f1">
+                    <div class="sub1">
+                        <p>Product Name</p>
+                        <input type="text" name="pn" id="pn">
+                    </div>
+                    <div class="sub1">
+                        <p>Quantity</p>
+                        <input type="text" name="qti" id="qti">
+                    </div>
+                </div>
+                <div class="f2">
+                    <div class="sub1">
+                        <p>Unit Price</p>
+                        <input type="text" name="up" id="up">
+                    </div>  
+                    <div class="sub1">
+                        <p>Discount</p>
+                        <input type="text" name="dis" id="dis">
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="button" name="sell" value="Sell" onclick="myFunction()">
+                    <input type="button" name="" value="Cancel" onclick="cancelFunction()">
+                </div>
+                
+            </form>
+            <div class="table">
+                <table id="tbl">
+                    <tr>
+                        <th>ID</th>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                        <th>Discount</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+    <script src="cumulative.js"></script>
+</body>
+</html>
