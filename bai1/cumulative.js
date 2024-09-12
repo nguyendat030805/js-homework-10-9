@@ -16,6 +16,7 @@ function myFunction(){
     document.getElementById('tbl').innerHTML +=row;
     id++;
 }
+
 function cancelFunction(){
     document.getElementById('pn').value = " ";
     document.getElementById('qti').value = 0;
